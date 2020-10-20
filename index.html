@@ -8,10 +8,11 @@
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="main.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <style>
             #nav-mobile a { font-size: 20px }
-            .bullet-list {padding-left: 20px !important}
+            .bullet-list {padding-left: 20px !important;padding-top: 20px;}
             .bullet-list {list-style: none; /* Remove default bullets */}
             .nested {padding-left: 24px !important}
             .bullet-list li::before {
@@ -26,6 +27,13 @@
               padding: 80px 20px;
               width: 280px !important
               }
+            .skillset-img{
+              height: 100px !important
+            }
+            .skillset-category{
+              padding-top:20px;
+              font-weight: bold;
+            }
             .anchor {
               display: block;
               position: relative;
@@ -34,8 +42,11 @@
                }
             .certificate-subtitle{
               padding-top: 4px;
+              font-size: 12px;
               font-style: italic;
             }
+            .nested{padding-bottom: 20px;}
+            .project-description{padding-top:16px !important}
         </style>
     </head>
     <body>
@@ -58,7 +69,45 @@
           <a class="anchor" id="home"></a>
           <h1>Hi there, I'm Sherry!</h1>
           <p class ="flow-text">Thank you for visiting! This is my first attempt to creating a personal website.</p>
+          <p>I am an engaging, hands-on, bilingual Business Consultant with experience managing technical projects that meet demanding time restraints and exceed all client expectations. Being a proven team player with the ability to work with people at all levels of a corporation, I have etablished a reputation for being positive in decision making and flexible in problem solving with my excellent interpersonal skills, hard work and dedication. As a graduate and program advocate for Honour Bachelor of Science in Technology Management (Co-Op) from Wilfrid Laurier University, I exercise sharp analytical, technology, financial, and client management skills along my journey.</p>
         </div><!-- /.home -->
+        <div>
+          <a class="anchor" id="skillsets"></a>
+          <h1>Skill Sets</h1>
+          <div class="row">
+            <div class="col s6">
+              <div class="card">
+                <div class="card-image">
+                  <img class ="skillset-img" src="img/technology.jpg">
+                  <span class="card-title">Technology</span>
+                </div>
+                <div class="card-content">
+                  <p class="skillset-category">Development</p>
+                  <p>Python, Java, Scala, JavaScript</p>
+                  <p class="skillset-category">Database</p>
+                  <p>Postgres SQL, MangoDB, Hadoop, SAP SQL Anywhere, Sybase SQL Advantage</p>
+                  <p class="skillset-category">Big Data Analysis</p>
+                  <p>Pandas, Numpy, PyMango, Matlab, Matplotlib, Seaborn</p>
+                  <p class="skillset-category">Full Stack Development</p>
+                  <p>Node, HTML, CSS</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="card">
+                <div class="card-image">
+                  <img class ="skillset-img" src="img/business.jpg">
+                  <span class="card-title">Business</span>
+                </div>
+                <div class="card-content">
+                  <p class="skillset-category">Data Analytics</p>
+                  <p>Tableau, PowerBI</p>
+                  <p class="skillset-category">Business System Analyst</p>
+                  <p>Technical Documentation, Requirement Gathering, Testing, Project Managment, Data Analysis</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.Skillsets -->
         <div>
           <a class="anchor" id="journey"></a>
           <h1>Journey</h1>
@@ -74,16 +123,11 @@
                 <h4>Vault Credit Corporation</h4>
                 <h6>Senior Business Analyst -- 2020</h6>
                 <ul class="bullet-list">
-                  <li>test test</li>
-                  <li>test test2</li>
-                  <ul class="nested">
-                    <li>indented list</li>
-                  </ul>
+                  <li>Standardlized change management flow and operation support process implemented with JIRA system</li>
+                  <li>Documented business requirements and user stories for all components of the Salesforce system</li>
+                  <li>Fixed defects and enhanced calculation algorithm for credit-risk based pricing model on Google Cloud Function via Python</li>
                 </ul>
               </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
           </div>
         </div>
       </div>
@@ -95,19 +139,31 @@
               </div>
             <div class="card-stacked">
               <div class="card-content">
+                <a class="anchor" id="scotiabank"></a>
                 <h4>Scotiabank</h4>
                 <h6>Senior Business Analyst -- 2016-2020</h6>
                 <ul class="bullet-list">
-                  <li>test test</li>
-                  <li>test test2</li>
-                  <ul class="nested">
-                    <li>indented list</li>
-                  </ul>
+                  <li>Volcker Regulatory Reporting System</li>
+                    <ul class="nested">
+                        <li>Technical Production Support on desgin defect and data issue</li>
+                        <li>Developed investifation tools on data issues in HDFS</i>
+                        <li>Implemented scripts which automated system monitoring process</i>
+                    </ul>
+                  <li>GRCT G20 Derivative Reporting System</li>
+                    <ul class="nested">
+                      <li>Defined requirements and design solution for data process engine with Elasticsearch and Kafka</li>
+                      <li>Initiated and built Data Schema Consolidation tool and Data Mapping Scoring Tool</li>
+                    </ul>
+                  <li>TenX Big Data Platform</li>
+                    <ul class="nested">
+                      <li>Managed system operation process including data governance, change management, and disaster recovery testing</li>
+                    </ul>
+                  <li>Risk Management Information Techonlogy Infrastructure Team</li>
+                    <ul class="nested">
+                      <li>Managed operation system and server upgrades and provisioning</li>
+                    </ul>
                 </ul>
               </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
           </div>
         </div>
       </div>
@@ -121,16 +177,12 @@
                 <h4>Royal Bank of Canada</h4>
                 <h6>Project Coordinator Officer -- 2015</h6>
                 <ul class="bullet-list">
-                  <li>test test</li>
-                  <li>test test2</li>
-                  <ul class="nested">
-                    <li>indented list</li>
-                  </ul>
+                  <li>Increased efficiency of project mangement by scheduling meetings, and tracking meeting minutes and decisions.</li>
+                  <li>created, updated, and delivered End to End Documents related to SAP systems and presented to the BUsiness Unit to ensure effective communication and collaboration between the two teams.</li>
+                  <li>Contributed more than 20 ideas and insights in the Top 10 Game Changer for Technology and Operation Student Community Challenge.</li>
+                  <li>Partificated in the RBC Next Great Innovator Competition and experienced real-life agile development withing 35 hours</li>
                 </ul>
               </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
           </div>
         </div>
       </div>
@@ -144,16 +196,12 @@
               <h4>SAP</h4>
               <h6>Techincal Product Support - 2014</h6>
               <ul class="bullet-list">
-                <li>test test</li>
-                <li>test test2</li>
-                <ul class="nested">
-                  <li>indented list</li>
-                </ul>
+                <li>Built a prototype for investigation Helper Tool for internal developer team</li>
+                <li>Resolved technical incidents on the system reported by SQL Anywhere Clients</li>
+                <li>Documented knowledge based articles, videos, WIKIS for both external clients and internal support teams </li>
+                <li>Managed, tracked, and delivered beta documentation tutorial project successfully on time</li>
               </ul>
               </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
           </div>
         </div>
       </div>
@@ -167,16 +215,16 @@
               <h4>Wilfrid Laurier University</h4>
               <h6>Bachelor of Business Technology Management - 2016</h6>
               <ul class="bullet-list">
-                <li>test test</li>
-                <li>test test2</li>
+                <li>Bachelor's Degress, Business Techology Management (with Co-op Program)</li>
+                <li>Activities:</li>
                 <ul class="nested">
-                  <li>indented list</li>
+                  <li>case@BTM - Project Launching Coordinator</li>
+                  <li>Internataional Student Association at Brantford - Founder</li>
+                  <li>ICT Support - Student Assistant</li>
+                  <li>Campus in Action - Clube Memeber</li>
                 </ul>
               </ul>
               </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
           </div>
         </div>
       </div><!-- /.journey -->
@@ -190,62 +238,140 @@
             <p class="certificate-subtitle">Coursera, Issued Oct 2020 <br>
               Content: Soritng & Searching, Divide & Conquer, Greedy Algorithms, Dynamic Programming
             </p>
-            <a href="https://www.coursera.org/account/accomplishments/certificate/DHXMHY4UHUMB" class="secondary-content"><i class="material-icons">See Credential</i></a>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/DHXMHY4UHUMB" class="secondary-content"><span>See Credential</span></a>
           </li>
           <li class="collection-item avatar">
             <img src="img/coursera-logo.jpeg" alt="" class="circle">
-            <span class="title">Algorithmic Toolbox</span>
-            <p class="certificate-subtitle">Coursera, Issued Oct 2020 <br>
-              Content: Soritng & Searching, Divide & Conquer, Greedy Algorithms
+            <span class="title">Data Structures</span>
+            <p class="certificate-subtitle">Coursera, Issued Jun 2020 <br>
+              Content: Dynamic Arrays, Priority Queues, Hash Tables, Binary Search Trees
             </p>
-            <a href="https://www.coursera.org/account/accomplishments/certificate/DHXMHY4UHUMB" class="secondary-content"><i class="material-icons">See Credential</i></a>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/ZTYG2TWGKK5N" class="secondary-content"><span>See Credential</span></a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="img/tableau-logo.jpg" alt="" class="circle">
+            <span class="title">Tableau Desktop Specialist</span>
+            <p class="certificate-subtitle">Tableau, Issued August 2020 <br>
+              Content: Data Analytics & Problem Solving via Tableau Desktop. Data Visualization and Presentation.
+            </p>
+            <a href="https://www.youracclaim.com/badges/7b4e8c4e-3f3d-46b9-9f3d-729f81593c40?source=linked_in_profile" class="secondary-content"><span>See Credential</span></a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="img/ut-logo.jpeg" alt="" class="circle">
+            <span class="title">Data Science</span>
+            <p class="certificate-subtitle">University Of Toronto, Issued August 2020 <br>
+              Content: Python, Panda, SQL, Linear & Logistic Regression, Big Data Systems, MongoDB, Hadoop, Spark, Cassandra, Kafka<br>
+              Courses:
+              <ul class="bullet-list" style="font-size: 12px; font-style: italic; ">
+                <li>3250-023 Foundation of Data Science</li>
+                <li>3250-026 Statistic for Data Science</li>
+                <li>3250-021 Big Data Management Systems & Tools</li>
+                <li>3250-025 Machine Learning</li>
+              </ul>
+            </p>
+            <a  class="secondary-content"><span>See Credential</span></a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="img/salesforce-logo.webp" alt="" class="circle">
+            <span class="title">Report & Dashboards for Lighting Experience</span>
+            <p class="certificate-subtitle">Trailhead by Salesforce, Issued Jan 2020 <br>
+              Content: CRM, Reporting, Mobile, Database, Data Management, Integration<br>
+            </p>
+            <a href="https://trailblazer.me/id/swork10" class="secondary-content"><span>See Credential</span></a>
           </li>
         </ul>
         </div><!-- /.certificate -->
         <div>
           <a class="anchor" id="project"></a>
           <h1>Projects</h1>
+          <p>Aside from projects at work, I am also entertained by personal project on the side</p>
            <div class="row">
             <div class="col s4">
               <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
-                  <span class="card-title">Card Title</span>
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                  <span class="card-title">Personal Website</span>
+                  <p>
+                    <i class="tiny material-icons">code</i>
+                    HTML, CSS
+                  </p>
+                  <p>
+                    Personal Project - 2020
+                  </p>
+                  <p class="project-description">
+                    <i class="tiny material-icons">dehaze</i>
+                    A personal website written in HTML with library Materialize hosting on GitHub
+                  </p>
                 </div>
                 <div class="card-action">
-                  <a href="#">This is a link</a>
-                  <a href="#">This is a link</a>
+                  <a href="http://sherry-666.github.io">Project</a>
+                  <a href="https://github.com/sherry-666/sherry-666.github.io">Source</a>
                 </div>
               </div>
             </div>
             <div class="col s4">
               <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
-                  <span class="card-title">Card Title</span>
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                  <span class="card-title">Statistical Analysis on Toronto Employee Wages</span>
+                  <p>
+                    <i class="tiny material-icons">code</i>
+                    Python with pandas, numpy, matplotlib
+                  </p>
+                  <p>
+                    Academic Project - 2020
+                  </p>
+                  <p class="project-description">
+                    <i class="tiny material-icons">dehaze</i>
+                    Statistical insights on variety of factors for employee wages in Toronto using multiple regression models
+                  </p>
                 </div>
                 <div class="card-action">
-                  <a href="#">This is a link</a>
-                  <a href="#">This is a link</a>
+                  <a href="#">Project</a>
+                  <a href="#">Source</a>
                 </div>
               </div>
             </div>
             <div class="col s4">
               <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
-                  <span class="card-title">Card Title</span>
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                  <span class="card-title">Data Schema Consolidation</span>
+                  <p>
+                    <i class="tiny material-icons">code</i>
+                    Pyspark, Python, Elasticsearch
+                  </p>
+                  <p>
+                    Scotiabank - 2019
+                  </p>
+                  <p class="project-description">
+                    <i class="tiny material-icons">dehaze</i>
+                    An application which retieves data across multiple trading system in different data format (FPML, JSON, Parquet, etc), maps data fields by searching matching values for each transaction. THe application has reduced operation time by 80 percent.
+                  </p>
                 </div>
                 <div class="card-action">
-                  <a href="#">This is a link</a>
-                  <a href="#">This is a link</a>
+                  <a href="#scotiabank">Work Experience at Scotiabank</a>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="col s4">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Data Mapping Scoring</span>
+                  <p>
+                    <i class="tiny material-icons">code</i>
+                    Pyspark, Python, Elasticsearch
+                  </p>
+                  <p>
+                    Scotiabank - 2019
+                  </p>
+                  <p class="project-description">
+                    <i class="tiny material-icons">dehaze</i>
+                    A scoring tool for the accuracy of a field mapping report by comparing the data value generated based on the mapping logic in the report utilizing cross-platform trasaction data.
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a href="#scotiabank">Work Experience at Scotiabank</a>
+                </div>
+              </div>
+            </div>
         </div><!--/.project -->
       </div><!-- /.container -->
 
